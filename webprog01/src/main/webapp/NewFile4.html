@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>자바 스크립트의 이벤트!</title>
+	<script language="JavaScript">
+		function check_form(){
+			alert('서버로 전송 전 확인합니다');
+			return true;
+		}
+		function clear_form(){
+			alert('폼 필드들을 초기화합니다')
+		}
+	
+	</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="my_form" action="http://www.freelec.co.kr"
+					onSubmit="return check_form()" onReset="clear_from()">
+					
+		ID : <input type="text" name="id"/>
+		<input type="submit" value="전송"/>
+		<input type="reset" value="필드초기화"/>
+	</form>
+
+</body>
+</html>
